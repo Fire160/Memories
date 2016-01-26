@@ -8,7 +8,7 @@ public class BoardMaker
 			{
 			for(int c = 0; c < Runner.words[0].length; c++)
 				{
-				if(i % NewArrays.columns == NewArrays.columns - 1)
+				if(i % (Runner.words.length + 1) == Runner.words.length)
 					{
 					System.out.println("| " + Runner.words[i][c] + " | ");
 					}
@@ -19,7 +19,7 @@ public class BoardMaker
 				}
 			for(int b = 0; b < Runner.words.length; b++)
 				{
-				if(i % b == b - 1)
+				if(i % (b + 1) == b)
 					{
 					System.out.println("+-------+");
 					}
